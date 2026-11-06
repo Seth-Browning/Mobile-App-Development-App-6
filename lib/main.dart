@@ -43,3 +43,10 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// In the next lectures, when running the app on Android, you might get an error though (after adding that package).
+
+// If that should be the case, try editing your android/settings.gradle file and make sure the following line:
+
+// id "org.jetbrains.kotlin.android" version "1.9.21" apply false
+// reflects your current Kotlin version (you find that version in the build.gradle file).

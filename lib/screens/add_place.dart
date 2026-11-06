@@ -4,6 +4,8 @@ import 'package:places/providers/user_places.dart';
 import 'package:places/widgets/image_input.dart';
 import 'dart:io';
 
+import 'package:places/widgets/location_input.dart';
+
 class AddPlaceScreen extends ConsumerStatefulWidget {
   const AddPlaceScreen({super.key});
 
@@ -48,6 +50,8 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
             ImageInput(onPickImage: (image) {
               _selectedImage = image;
             },),
+            SizedBox(height: 16),
+            LocationInput(),
             SizedBox(height: 16),
             ElevatedButton.icon(
               icon: Icon(Icons.add),
