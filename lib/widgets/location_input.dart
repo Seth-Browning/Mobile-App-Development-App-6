@@ -82,11 +82,6 @@ class _LocationInputState extends State<LocationInput> {
               label: Text('Get Current Location'),
               onPressed: _getCurrentLocation,
             ),
-            TextButton.icon(
-              icon: Icon(Icons.map),
-              label: Text('Get on Map'),
-              onPressed: () {},
-            ),
           ],
         ),
       ],
